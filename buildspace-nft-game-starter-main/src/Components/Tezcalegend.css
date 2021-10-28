@@ -1,0 +1,41 @@
+.body-tezca {
+    background: rgb(20,20,20);
+    overflow: hidden;
+    font-family: 'Roboto';
+    width: 900px;
+    height: 573px;
+    /* push down the the wrapper by half the page */
+    /* margin: 50% 0 0 0; */
+    position: relative;
+  }
+
+  .wrapper {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    /* perspective gives us a 3d space within the element to work with*/
+    /* perspective also has the effect of pushing the content "down" */
+     perspective:  650px;
+  }
+  .scroll-text {
+    padding:0px 20px 0px 20px;
+    color: #ffc909;
+    font-size: 1.4vw;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    /* animation: scroll 60s linear forwards infinite;  */
+    animation: scroll 60s linear infinite; 
+    
+  }
+  h1 {
+    text-align: center;
+    margin-top: 70%; /*Make the initial Tezcatlipoca legend text appear low at page*/
+  }
+  
+  @keyframes scroll {
+      from { top: 0px; transform: translateZ(0) rotateX(20deg); }
+      to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg); }
+  }
