@@ -5,12 +5,12 @@
 
 export const { ethereum } = window
 export const networks = {
-    '1':'Mainnet',
-    '3':'Ropsten', 
-    '4':'Rinkeby',
-    '5':'Goerli',
-    '42': 'Kovan',
-    '80001': 'Matic Mumbai' 
+    '0x1':'Mainnet',
+    '0x3':'Ropsten', 
+    '0x4':'Rinkeby',
+    '0x5':'Goerli',
+    '0x2a': 'Kovan',
+    '0x13881': 'Matic Mumbai' 
 };
 
 // List of error coming from Metamask Wallet
@@ -65,8 +65,6 @@ export const  getEthAddress = async () => {
     try {
       if (ethereum) {
         const accounts = await ethereum.request({method: 'eth_accounts'})
-        console.log('ckhmmacc', accounts)
-        console.log('accounts.lenght',accounts.length)
         if (accounts.length===0) 
           {
               return {opcode: false, errorMsg: 'Unlock Metamask Wallet'} //  metamask locked/not connected}

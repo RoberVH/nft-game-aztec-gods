@@ -5,7 +5,6 @@ export default function Tezcalegend() {
         <div id ="bodyframe" className="body-tezca">
           <div id="envoltura" className="wrapper">
             <div id="enrollartexto" className="scroll-text">
-              {/* <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> */}
                <h1>Legend of Tezcatlipoca </h1> 
               <p>
               A long time ago, in a land far, far away, before the world was created, all that existed were a few gods, a massive ocean, and the sea half crocodile half fish monster named Cipactli.

@@ -9,6 +9,8 @@
     position: relative;
   }
 
+
+
   .wrapper {
     display: flex;
     height: 100%;
@@ -27,8 +29,9 @@
     text-align: justify;
     position: relative;
     /* animation: scroll 60s linear forwards infinite;  */
-    animation: scroll 60s linear infinite; 
-    
+    animation: scroll 60s linear forwards; 
+    animation-iteration-count: infinite;
+   
   }
   h1 {
     text-align: center;
