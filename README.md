@@ -15,7 +15,7 @@ https://github.com/buildspace/buildspace-nft-game-starter
 
 ### Deployments
 Smart Contract is deployed to Rinkeby ethereum test network at 0x6dcF7C4C6460cA814bfDf3FcFd467F805FB72733
-React App is online at https://617d5c88d8361f49ae4fce35--nft-aztec-gods-battle.netlify.app/
+React App is online at https://617d5c88d8361f49ae4fce35--nft-aztec-gods-battle.netlify.app/  or simply https://nft-aztec-gods-battle.netlify.app/
 
 If you want to run the Dapp you'll need to install Metamask
 
