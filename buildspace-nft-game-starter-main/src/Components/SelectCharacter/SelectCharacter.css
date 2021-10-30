@@ -52,8 +52,28 @@
   border-bottom-right-radius: 10px;
   border: none;
   cursor: pointer;
-  background-color: rgb(32, 129, 226);
+  background-color: rgb(233, 19, 48);
   color: white;
   font-weight: bold;
   font-size: 16px;
+}
+
+.minted-nft-path-anchor {
+  margin-top: 120px;
+}
+
+.anchor-nft {
+  font-size: 2em;
+  color: yellow;
+  font-weight: bold;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

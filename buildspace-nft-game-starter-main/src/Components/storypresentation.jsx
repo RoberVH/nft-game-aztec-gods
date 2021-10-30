@@ -29,7 +29,7 @@ function StoryPresentation() {
                     muted={musicOn}
                     controls='false'
                     width={840}
-                    height={573 }
+                    height={500 }
                     />
             </div>
             <div id="tezcadiv" className= "tezcaframe">

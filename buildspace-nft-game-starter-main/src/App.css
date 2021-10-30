@@ -110,9 +110,9 @@
 
 .connect-wallet-button {
   margin-top: 2em;
-  font-size: 1.2em;
+  font-size: 1.1em;
   width: 22em;
-  height: 3em;
+  height: 2.5em;
   color: white;
   background-image: linear-gradient(
     to right,
@@ -152,9 +152,10 @@
 
 .footer-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  padding-right: 60px;
 }
 
 .twitter-logo {

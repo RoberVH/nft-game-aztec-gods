@@ -1,7 +1,9 @@
 import React from 'react'
-import StoryPresentation from './storypresentation'
-import SelectCharacter from './SelectCharacter/index'
-import { getEthAddress  } from '../utils/walletconn'
+import StoryPresentation from "./storypresentation"
+import SelectCharacter from "./SelectCharacter/index"
+import LoadingIndicator from "./LoadingIndicator/index"
+import Arena from "./Arena"
+import { getEthAddress  } from "../utils/walletconn"
 import '../App.css'
 
 export const  renderContent = (
@@ -9,9 +11,9 @@ export const  renderContent = (
         setEthAddress, 
         canConnectWallet,
         characterNFT,
-        setCharacterNFT
-        ) => {
-
+        setCharacterNFT,
+        isLoading        ) => {
+            console.log('character:', characterNFT)
     // handling methods
     const handleConnect = async () => {
         const result = await getEthAddress()
@@ -22,12 +24,12 @@ export const  renderContent = (
             alert(result.message)
         }
     };
-
     if (!currentAccount) {
     /*Scenario 1 */        
     return (
         <div>
             <StoryPresentation />
+            { isLoading && <LoadingIndicator /> }
             <div className="connect-wallet-container">
                 <button 
               className= "connect-wallet-button"
@@ -40,7 +42,8 @@ export const  renderContent = (
             );
             /* Scenario #2 */
         } else if (currentAccount && !characterNFT) {
-            
-        return <SelectCharacter setCharacterNFT={setCharacterNFT} />;
-    }
+            return <SelectCharacter setCharacterNFT={setCharacterNFT}  />;
+        } else if (currentAccount && characterNFT) {
+            return <Arena characterNFT={characterNFT} setCharacterNFT={setCharacterNFT}/>;
+          }
   };            

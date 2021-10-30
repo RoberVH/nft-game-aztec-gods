@@ -3,7 +3,7 @@
     overflow: hidden;
     font-family: 'Roboto';
     width: 900px;
-    height: 573px;
+    height: 500px;
     /* push down the the wrapper by half the page */
     /* margin: 50% 0 0 0; */
     position: relative;
@@ -28,8 +28,8 @@
     font-weight: bold;
     text-align: justify;
     position: relative;
-    /* animation: scroll 60s linear forwards infinite;  */
-    animation: scroll 60s linear forwards; 
+    /* animation: scroll 160s linear forwards infinite;  */
+    animation: scroll 320s linear forwards; 
     animation-iteration-count: infinite;
    
   }
