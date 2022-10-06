@@ -113,11 +113,7 @@ return (
           <img src={aztecskull} alt="aztec skull" heigth="60" width="60" />
           <h4 className="header">Aztec Gods Battle</h4>
         </div>
-        {/* <p className="sub-text">
-          Save Aztec Fifth Sun, defeat dark lord of the Tenochcas' Underworld
-          Tezcatlipoca
-        </p> */}
-        {renderContent(
+         {renderContent(
           ethAddress,
           setEthAddress,
           canConnectWallet,

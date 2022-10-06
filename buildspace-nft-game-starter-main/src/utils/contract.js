@@ -20,8 +20,8 @@ export const initEthersVar = () => {
 */
 export const fetchNFTMetadata = async (accountAddress, setCharacterNFT) => {
     if (signer) {
-        if (ethereum.chainId!=='0x4')
-            { console.log ('Wrong Network, is not Rinkeby Network!!')
+        if (ethereum.chainId!=='0x5')
+            { console.log ('Wrong Network, is not Goerli Network!!')
             return  // do nothing
          }
         console.log('Checking for Character NFT on address:', accountAddress);
