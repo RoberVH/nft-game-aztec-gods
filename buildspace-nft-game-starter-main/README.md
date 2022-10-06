@@ -1,5 +1,19 @@
 # buildspace NFT Game Project
 
+Simple Game of attack turns
+
+Deployed to https://617d5c88d8361f49ae4fce35--nft-aztec-gods-battle.netlify.app/
+To play enter and mint an NFT  Aztec God. It's your player character. Attack Boss and see if
+you can take it down
+
+## Changes
+
+Sept 2022
+v2.0 
+    Contract deployed to Goerli test Network
+    Message and Variables change to Goerli
+    More HP gave to Boss an lesser damage attack points to Boss and Characters to make it last longer
+
 ### **Welcome 👋**
 To get started with this course, clone this repo and follow these commands:
 

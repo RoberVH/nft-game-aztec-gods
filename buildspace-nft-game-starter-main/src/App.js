@@ -21,7 +21,7 @@ const App = () => {
   // State Vars
   const [ethAddress, setEthAddress] = useState(undefined);
   const [canConnectWallet, setCanConnect] = useState(false);
-  const [networkRinkeby, setNetworkRinkeby] = useState(undefined);
+  const [network, setNetwork] = useState(undefined);
   const [characterNFT, setCharacterNFT] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -41,7 +41,7 @@ const App = () => {
       if (opcode) {
         if (value && value[0].length > 0) {
           setEthAddress(value[0]);
-          setNetworkRinkeby(ethereum.networkVersion === "4");
+          setNetwork(ethereum.networkVersion === "5");
         } else alert(errorMsg);
       }
     }
@@ -53,7 +53,7 @@ const App = () => {
   useEffect(() => {
     if (ethereum) {
       setCanConnect(ethereum);
-      setNetworkRinkeby(ethereum.chainId === "0x4");
+      setNetwork(ethereum.chainId === "0x5");
       initEthersVar()
     }
   }, []);
@@ -93,15 +93,15 @@ const App = () => {
 return (
 
     <div className="App">
-      {ethAddress && !networkRinkeby && canConnectWallet && (
+      {ethAddress && !network && canConnectWallet && (
         <div className="rinkeby-alert-msg">
           <img src={alarmicon} alt="alarm icon" />
           <label style={{ marginLeft: "10px", marginTop: "-5px" }}>
-            Network is{" "}
+            Network is{" "} 
             {networks[ethereum.chainId]
               ? networks[ethereum.chainId]
               : "unknown"}
-            , please change it to Rinkeby Network in Metamask !!!
+            , please change it to Goerli Network in Metamask !!!
           </label>
         </div>
       )}
