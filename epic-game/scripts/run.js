@@ -21,11 +21,22 @@ const main = async () => {
   await txn.wait();
   
   // Get the value of the NFT's URI.
-  // let returnedTokenUri = await gameContract.tokenURI(1);
+  // let returnedTokenUri = await gameContract.tokenURI(0);
   // console.log("Token URI:", returnedTokenUri);  
   
-  txn = await gameContract.attackBoss();
-  await txn.wait();  
+  // txn = await gameContract.attackBoss();
+  // await txn.wait();  
+  /****************** */
+  // an NFT w/ the character at index 1 of our array,  
+  txn = await gameContract.mintCharacterNFT(1);
+  await txn.wait();
+  txn= await gameContract.tokenURI(0);
+  console.log('tokenURI', txn);
+  txn = await gameContract.getAllDefaultCharacters();
+  console.log('caracteres', txn);
+  txn = await gameContract.getAllDefaultCharacters();
+  console.log('caracteres', txn);
+  /************************* */
   txn = await gameContract.attackBoss();
   await txn.wait();    
 };

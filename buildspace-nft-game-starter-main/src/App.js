@@ -1,3 +1,5 @@
+// Version 2.0
+// last longer, contract deployed to Goerli
 import React, { useState, useEffect } from "react";
 import twitterLogo from "./assets/twitter-logo.svg";
 import {

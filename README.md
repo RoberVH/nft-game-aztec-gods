@@ -1,6 +1,7 @@
 # buildspace NFT Game Project
 
 ### **Welcome 👋**
+<<<<<<< HEAD
 This project is comprised of two pieces of Software (buildspace-nft-game-starter-main)
  . A solidity smart  contract (epic-game)
  . A react App Applicaciton that is the UI to access the contract
@@ -20,3 +21,21 @@ React App is online at https://617d5c88d8361f49ae4fce35--nft-aztec-gods-battle.n
 If you want to run the Dapp you'll need to install Metamask
 
 Roberto V. @RoberVH
+=======
+This project is comprised of two pieces of Software
+ . An smart  contract
+ . A react App Applicaciton that is the UI to access the contract
+
+Both projects were done on Octuber 2021 following guidelines of _buildspace hackhaton "Create your own mini turn-based NFT browser game"
+
+
+### Create your own mini turn-based NFT browser game
+
+Is at https://buildspace.so/, ( twitter @_buildspace ) if you want access to the Guide you'll need to register
+
+
+The react app was clone from model project created by Farza M. (twitter @farzaTV) and is at  https://github.com/buildspace/buildspace-nft-game-starter
+
+If you want to run the Dapp you'll need to install Metamask
+The live app is at https://617d5c88d8361f49ae4fce35--nft-aztec-gods-battle.netlify.app/
+>>>>>>> 9d554fd (Deployed to Goerli, Game last longer)
